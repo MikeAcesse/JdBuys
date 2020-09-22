@@ -1,0 +1,14 @@
+/bin/
+/results/
+*.lst
+*.rej
+license.txt
+runner.conf
+InstanceInfo.xml
+/bin/
+/results/
+*.iml
+.idea/
+.settings/
+out/
+
