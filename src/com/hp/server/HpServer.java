@@ -25,6 +25,7 @@ public class HpServer {
 			while((len = inputStream.read(bytes))!=-1){
 				outputStream.write(bytes,0,len);
 				outputStream.flush();
+
 			}
 			System.out.println("服务器结束了");
 			inputStream.close();
