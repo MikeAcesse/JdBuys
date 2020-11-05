@@ -42,9 +42,27 @@ public class ReadParams extends HttpServlet {
 				"</tr>\n");
 		Enumeration paraNames = request.getParameterNames();
 		while(paraNames.hasMoreElements()){
-			String paraName = (String) paraNames.nextElement();
-
-
+			String paramName = (String) paraNames.nextElement();
+			out.print("<tr><td>"+paramName+"</td>\n");
+            String[] paramValues = request.getParameterValues(paramName);
+            //读取单个值的数据
+			if(paramValues.length == 1){
+				String paramValue = paramValues[0];
+				if(paramValue.length() == 0){
+					out.print("<td><i>没有值</i></td>");
+				}else{
+					out.println("<td>"+paramValue+"</td>");
+				}
+			}else{
+				//读取多个值的数据
+				out.println("<td><ul>");
+				for (int i = 0; i < paramValues.length; i++) {
+					out.println("<li>"+paramValues[i]);
+				}
+				out.println("</ul></td>");
+			}
+			out.print("</tr>");
 		}
+		out.println("\n</table>\n</body></html>");
 	}
 }
