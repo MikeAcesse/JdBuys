@@ -12,3 +12,4 @@ InstanceInfo.xml
 .settings/
 out/
 
+/web/WEB-INF/classes/
