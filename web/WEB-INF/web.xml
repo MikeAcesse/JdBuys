@@ -31,7 +31,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ErrorHandler</servlet-name>
-        <url-pattern>/ErrorHandle</url-pattern>
+        <url-pattern>/ErrorHandler</url-pattern>
     </servlet-mapping>
 
     <!-- error-code 相关的错误页面 -->
@@ -61,5 +61,6 @@
         <exception-type>java.lang.Throwable</exception-type>
         <location>/ErrorHandler</location>
     </error-page>
+
     
 </web-app>

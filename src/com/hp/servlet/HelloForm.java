@@ -14,8 +14,10 @@ import java.io.PrintWriter;
  * @version 1.8
  * @date 2020/11/2 11:24
  */
-@WebServlet("/HelloForm")
+@WebServlet(name = "HelloForm",value="/HelloForm")
 public class HelloForm extends HttpServlet {
+	private static final long serialVersionUID = -3937628065356368248L;
+
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//设置响应内容类型

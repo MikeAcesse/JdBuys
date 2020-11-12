@@ -14,7 +14,7 @@ import java.util.Enumeration;
  * @version 1.8
  * @date 2020/11/4 16:35
  */
-@WebServlet("/ReadParams")
+@WebServlet(name="readParam",value="/ReadParams")
 public class ReadParams extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Override
