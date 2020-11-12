@@ -20,5 +20,14 @@
 <!--        <servlet-name>HelloForm</servlet-name>-->
 <!--        <url-pattern>/HelloForm</url-pattern>-->
 <!--    </servlet-mapping>-->
-    
+
+
+<!--    <servlet>-->
+<!--        <servlet-name>CheckBox</servlet-name>-->
+<!--        <servlet-class>com.hp.servlet.CheckBox</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>CheckBox</servlet-name>-->
+<!--        <url-pattern>/CheckBox</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
