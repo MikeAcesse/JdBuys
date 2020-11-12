@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>菜鸟教程</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
  <form action="HelloForm" method="GET">
@@ -11,5 +17,23 @@
      网址：<input type="text" name="url"/>
      <input type="submit" value="提交">
  </form>
+<div>
+ <form action="ReadParams" method="POST" target="_blank">
+     <input type="checkbox" name="maths" checked="checked" /> 数学
+     <input type="checkbox" name="physics"  /> 物理
+     <input type="checkbox" name="chemistry" checked="checked" /> 化学
+     <input type="submit" value="选择学科" />
+ </form>
+</div>
+<br/>
+ <h1>
+ <div class="container">
+     <form action="hellocookies" method="POST">
+         网址名：<input type="text" name="name" class="form-control">
+         <br/>
+         网址：<input type="text" name="url" class="form-control"/>
+         <input type="submit" value="提交" class="btn btn-primary">
+     </form>
+ </div>
 </body>
 </html>
