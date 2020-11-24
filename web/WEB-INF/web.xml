@@ -23,15 +23,6 @@
     </servlet-mapping>
 
 
-    <servlet>
-        <servlet-name>CheckBox</servlet-name>
-        <servlet-class>com.hp.servlet.CheckBox</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CheckBox</servlet-name>
-        <url-pattern>/CheckBox</url-pattern>
-    </servlet-mapping>
-
      <filter>
          <filter-name>LogFilter</filter-name>
          <filter-class>com.hp.filter.LogFilter</filter-class>
