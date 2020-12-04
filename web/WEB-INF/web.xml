@@ -12,6 +12,17 @@
         <url-pattern>/HelloWorld</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>com.hp.servlet.HelloForm</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+
+
      <filter>
          <filter-name>LogFilter</filter-name>
          <filter-class>com.hp.filter.LogFilter</filter-class>
@@ -71,5 +82,4 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    
 </web-app>
